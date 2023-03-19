@@ -1,11 +1,11 @@
 import myKey from "./khaltiKey";
-
+const axios = require("axios");
 let config = {
     // replace this key with yours
     "publicKey": myKey.publicTestKey,
-    "productIdentity": "2058972",
-    "productName": "Gym Fitness",
-    "productUrl": "sameer don ko url",
+    "productIdentity": "1234567890",
+    "productName": "Drogon",
+    "productUrl": "http://gameofthrones.com/buy/Dragons",
     "eventHandler": {
         onSuccess (payload) {
             // hit merchant api for initiating verfication
@@ -22,4 +22,4 @@ let config = {
     },
     "paymentPreference": ["KHALTI", "EBANKING","MOBILE_BANKING", "CONNECT_IPS", "SCT"],
 };
-export default config
+export default config;
